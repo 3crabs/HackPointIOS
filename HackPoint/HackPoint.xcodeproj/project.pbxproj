@@ -3,27 +3,147 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E46C467D79F9E80135DC043 /* Pods_HackPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D5E89EE91847B846AFFA79 /* Pods_HackPoint.framework */; };
+		A202B4B2264FC63800FAF0E1 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A202B4B1264FC63800FAF0E1 /* Reusable.swift */; };
+		A202B4B4264FC7FB00FAF0E1 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A202B4B3264FC7FB00FAF0E1 /* HomeCell.swift */; };
 		A21FF804264F83B000647317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FF803264F83B000647317 /* AppDelegate.swift */; };
-		A21FF806264F83B000647317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FF805264F83B000647317 /* SceneDelegate.swift */; };
-		A21FF808264F83B000647317 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FF807264F83B000647317 /* ViewController.swift */; };
 		A21FF80B264F83B000647317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21FF809264F83B000647317 /* Main.storyboard */; };
 		A21FF80D264F83B100647317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A21FF80C264F83B100647317 /* Assets.xcassets */; };
 		A21FF810264F83B100647317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21FF80E264F83B100647317 /* LaunchScreen.storyboard */; };
+		A21FF819264F86A600647317 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FF818264F86A600647317 /* APIConfiguration.swift */; };
+		A264648F264F8C930002D28D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A264648E264F8C920002D28D /* LoginViewController.swift */; };
+		A2646498264F957C0002D28D /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2646497264F957C0002D28D /* Storyboarded.swift */; };
+		A264649D264F98400002D28D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A264649C264F98400002D28D /* TextField.swift */; };
+		A264649F264F98640002D28D /* TextFieldEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A264649E264F98640002D28D /* TextFieldEffect.swift */; };
+		A26464B3264F99900002D28D /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464A1264F998F0002D28D /* Poppins-ExtraBoldItalic.ttf */; };
+		A26464B4264F99900002D28D /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464A2264F998F0002D28D /* Poppins-ExtraLight.ttf */; };
+		A26464B5264F99900002D28D /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464A3264F998F0002D28D /* Poppins-SemiBoldItalic.ttf */; };
+		A26464B6264F99900002D28D /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464A4264F998F0002D28D /* Poppins-Thin.ttf */; };
+		A26464B7264F99900002D28D /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464A5264F998F0002D28D /* Poppins-ExtraLightItalic.ttf */; };
+		A26464B8264F99900002D28D /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464A6264F998F0002D28D /* Poppins-BlackItalic.ttf */; };
+		A26464B9264F99900002D28D /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464A7264F998F0002D28D /* Poppins-ThinItalic.ttf */; };
+		A26464BA264F99900002D28D /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464A8264F998F0002D28D /* Poppins-Black.ttf */; };
+		A26464BB264F99900002D28D /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464A9264F998F0002D28D /* Poppins-Regular.ttf */; };
+		A26464BC264F99900002D28D /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464AA264F998F0002D28D /* Poppins-Medium.ttf */; };
+		A26464BD264F99900002D28D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464AB264F998F0002D28D /* Poppins-Bold.ttf */; };
+		A26464BE264F99900002D28D /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464AC264F998F0002D28D /* Poppins-Light.ttf */; };
+		A26464BF264F99900002D28D /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464AD264F99900002D28D /* Poppins-LightItalic.ttf */; };
+		A26464C0264F99900002D28D /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464AE264F99900002D28D /* Poppins-MediumItalic.ttf */; };
+		A26464C1264F99900002D28D /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464AF264F99900002D28D /* Poppins-ExtraBold.ttf */; };
+		A26464C2264F99900002D28D /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464B0264F99900002D28D /* Poppins-Italic.ttf */; };
+		A26464C3264F99900002D28D /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464B1264F99900002D28D /* Poppins-BoldItalic.ttf */; };
+		A26464C4264F99900002D28D /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464B2264F99900002D28D /* Poppins-SemiBold.ttf */; };
+		A26464D3264F9B310002D28D /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464C7264F9B300002D28D /* Roboto-ThinItalic.ttf */; };
+		A26464D4264F9B310002D28D /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464C8264F9B310002D28D /* Roboto-BlackItalic.ttf */; };
+		A26464D5264F9B310002D28D /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464C9264F9B310002D28D /* Roboto-Italic.ttf */; };
+		A26464D6264F9B310002D28D /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464CA264F9B310002D28D /* Roboto-BoldItalic.ttf */; };
+		A26464D7264F9B310002D28D /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464CB264F9B310002D28D /* Roboto-MediumItalic.ttf */; };
+		A26464D8264F9B310002D28D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464CC264F9B310002D28D /* Roboto-Bold.ttf */; };
+		A26464D9264F9B310002D28D /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464CD264F9B310002D28D /* Roboto-Black.ttf */; };
+		A26464DA264F9B310002D28D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464CE264F9B310002D28D /* Roboto-Medium.ttf */; };
+		A26464DB264F9B310002D28D /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464CF264F9B310002D28D /* Roboto-LightItalic.ttf */; };
+		A26464DC264F9B310002D28D /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464D0264F9B310002D28D /* Roboto-Light.ttf */; };
+		A26464DD264F9B310002D28D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464D1264F9B310002D28D /* Roboto-Regular.ttf */; };
+		A26464DE264F9B310002D28D /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26464D2264F9B310002D28D /* Roboto-Thin.ttf */; };
+		A26464E0264FA9AC0002D28D /* ButtonCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26464DF264FA9AC0002D28D /* ButtonCustomizable.swift */; };
+		A26464E3264FB5FE0002D28D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26464E2264FB5FE0002D28D /* HomeViewController.swift */; };
+		A26464E5264FB7680002D28D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26464E4264FB7680002D28D /* MainCoordinator.swift */; };
+		A26464E7264FB8510002D28D /* ViewCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26464E6264FB8510002D28D /* ViewCustomizable.swift */; };
+		A2932FDF264FD3A200680D31 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FDE264FD3A200680D31 /* Coordinator.swift */; };
+		A2932FE1264FD3F900680D31 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FE0264FD3F900680D31 /* BaseViewController.swift */; };
+		A2932FE3264FD42F00680D31 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FE2264FD42F00680D31 /* ProgressHUD.swift */; };
+		A2932FE7264FDB2600680D31 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FE6264FDB2600680D31 /* TeamViewController.swift */; };
+		A2932FE9264FDD0B00680D31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2932FE8264FDD0B00680D31 /* Images.xcassets */; };
+		A2932FEB264FDF2000680D31 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FEA264FDF2000680D31 /* TeamCell.swift */; };
+		A2932FEF264FE80100680D31 /* MarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FEE264FE80100680D31 /* MarkViewController.swift */; };
+		A2932FF3264FFD8D00680D31 /* MarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FF2264FFD8D00680D31 /* MarkCell.swift */; };
+		A2932FF526500A5B00680D31 /* FinishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FF426500A5B00680D31 /* FinishCell.swift */; };
+		A2932FF72650442400680D31 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FF62650442400680D31 /* APIConstant.swift */; };
+		A2932FFA2650465E00680D31 /* AuthEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FF92650465E00680D31 /* AuthEndPoint.swift */; };
+		A2932FFC26504D8C00680D31 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FFB26504D8C00680D31 /* NetworkLogger.swift */; };
+		A2932FFE26504E8C00680D31 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FFD26504E8C00680D31 /* APIClient.swift */; };
+		A2DADA8D2650BB190002D66D /* DTOReferee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DADA8C2650BB190002D66D /* DTOReferee.swift */; };
+		A2DADA912650CC220002D66D /* DTOTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DADA902650CC220002D66D /* DTOTeam.swift */; };
+		A2DADA942650D0F30002D66D /* TeamEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DADA932650D0F30002D66D /* TeamEndPoint.swift */; };
+		A2DADA982650E7260002D66D /* DTONote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DADA972650E7260002D66D /* DTONote.swift */; };
+		A2DADA9B2650EB9B0002D66D /* RefereeEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DADA9A2650EB9B0002D66D /* RefereeEndPoint.swift */; };
+		A2DADA9D2650F89C0002D66D /* DTOResultRefereePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DADA9C2650F89C0002D66D /* DTOResultRefereePoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79D5E89EE91847B846AFFA79 /* Pods_HackPoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackPoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A202B4B1264FC63800FAF0E1 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		A202B4B3264FC7FB00FAF0E1 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		A21FF800264F83B000647317 /* HackPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21FF803264F83B000647317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A21FF805264F83B000647317 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A21FF807264F83B000647317 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A21FF80A264F83B000647317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A21FF80C264F83B100647317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A21FF80F264F83B100647317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A21FF811264F83B100647317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A21FF818264F86A600647317 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		A264648E264F8C920002D28D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A2646497264F957C0002D28D /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		A264649C264F98400002D28D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		A264649E264F98640002D28D /* TextFieldEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldEffect.swift; sourceTree = "<group>"; };
+		A26464A1264F998F0002D28D /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		A26464A2264F998F0002D28D /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		A26464A3264F998F0002D28D /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		A26464A4264F998F0002D28D /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		A26464A5264F998F0002D28D /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		A26464A6264F998F0002D28D /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A26464A7264F998F0002D28D /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A26464A8264F998F0002D28D /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		A26464A9264F998F0002D28D /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		A26464AA264F998F0002D28D /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		A26464AB264F998F0002D28D /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		A26464AC264F998F0002D28D /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		A26464AD264F99900002D28D /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		A26464AE264F99900002D28D /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A26464AF264F99900002D28D /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A26464B0264F99900002D28D /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		A26464B1264F99900002D28D /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A26464B2264F99900002D28D /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		A26464C7264F9B300002D28D /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A26464C8264F9B310002D28D /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A26464C9264F9B310002D28D /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		A26464CA264F9B310002D28D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A26464CB264F9B310002D28D /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A26464CC264F9B310002D28D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		A26464CD264F9B310002D28D /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		A26464CE264F9B310002D28D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		A26464CF264F9B310002D28D /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		A26464D0264F9B310002D28D /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		A26464D1264F9B310002D28D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		A26464D2264F9B310002D28D /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		A26464DF264FA9AC0002D28D /* ButtonCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCustomizable.swift; sourceTree = "<group>"; };
+		A26464E2264FB5FE0002D28D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A26464E4264FB7680002D28D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		A26464E6264FB8510002D28D /* ViewCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCustomizable.swift; sourceTree = "<group>"; };
+		A2932FDE264FD3A200680D31 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A2932FE0264FD3F900680D31 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A2932FE2264FD42F00680D31 /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		A2932FE6264FDB2600680D31 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		A2932FE8264FDD0B00680D31 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A2932FEA264FDF2000680D31 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		A2932FEE264FE80100680D31 /* MarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkViewController.swift; sourceTree = "<group>"; };
+		A2932FF2264FFD8D00680D31 /* MarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkCell.swift; sourceTree = "<group>"; };
+		A2932FF426500A5B00680D31 /* FinishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishCell.swift; sourceTree = "<group>"; };
+		A2932FF62650442400680D31 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		A2932FF92650465E00680D31 /* AuthEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndPoint.swift; sourceTree = "<group>"; };
+		A2932FFB26504D8C00680D31 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		A2932FFD26504E8C00680D31 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A2DADA8C2650BB190002D66D /* DTOReferee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOReferee.swift; sourceTree = "<group>"; };
+		A2DADA902650CC220002D66D /* DTOTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOTeam.swift; sourceTree = "<group>"; };
+		A2DADA932650D0F30002D66D /* TeamEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamEndPoint.swift; sourceTree = "<group>"; };
+		A2DADA972650E7260002D66D /* DTONote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTONote.swift; sourceTree = "<group>"; };
+		A2DADA9A2650EB9B0002D66D /* RefereeEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefereeEndPoint.swift; sourceTree = "<group>"; };
+		A2DADA9C2650F89C0002D66D /* DTOResultRefereePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOResultRefereePoint.swift; sourceTree = "<group>"; };
+		E916092245F94A1CEA243121 /* Pods-HackPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackPoint.release.xcconfig"; path = "Target Support Files/Pods-HackPoint/Pods-HackPoint.release.xcconfig"; sourceTree = "<group>"; };
+		F9626255D92D62321540E6F2 /* Pods-HackPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackPoint.debug.xcconfig"; path = "Target Support Files/Pods-HackPoint/Pods-HackPoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +151,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E46C467D79F9E80135DC043 /* Pods_HackPoint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		339A0AEBDEFBE0194F78463F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79D5E89EE91847B846AFFA79 /* Pods_HackPoint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		446BF5E261C05DA179D0E4CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9626255D92D62321540E6F2 /* Pods-HackPoint.debug.xcconfig */,
+				E916092245F94A1CEA243121 /* Pods-HackPoint.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A21FF7F7264F83B000647317 = {
 			isa = PBXGroup;
 			children = (
 				A21FF802264F83B000647317 /* HackPoint */,
 				A21FF801264F83B000647317 /* Products */,
+				446BF5E261C05DA179D0E4CA /* Pods */,
+				339A0AEBDEFBE0194F78463F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +196,177 @@
 		A21FF802264F83B000647317 /* HackPoint */ = {
 			isa = PBXGroup;
 			children = (
+				A264648C264F8C790002D28D /* Scenes */,
+				A21FF817264F83F100647317 /* Network Layer */,
 				A21FF803264F83B000647317 /* AppDelegate.swift */,
-				A21FF805264F83B000647317 /* SceneDelegate.swift */,
-				A21FF807264F83B000647317 /* ViewController.swift */,
 				A21FF809264F83B000647317 /* Main.storyboard */,
-				A21FF80C264F83B100647317 /* Assets.xcassets */,
 				A21FF80E264F83B100647317 /* LaunchScreen.storyboard */,
 				A21FF811264F83B100647317 /* Info.plist */,
+				A2646497264F957C0002D28D /* Storyboarded.swift */,
+				A26464DF264FA9AC0002D28D /* ButtonCustomizable.swift */,
+				A26464E6264FB8510002D28D /* ViewCustomizable.swift */,
+				A202B4B1264FC63800FAF0E1 /* Reusable.swift */,
+				A2932FDE264FD3A200680D31 /* Coordinator.swift */,
+				A2932FE8264FDD0B00680D31 /* Images.xcassets */,
+				A21FF80C264F83B100647317 /* Assets.xcassets */,
+				A2932FE0264FD3F900680D31 /* BaseViewController.swift */,
+				A2932FE2264FD42F00680D31 /* ProgressHUD.swift */,
+				A264649B264F98300002D28D /* Text Field */,
+				A26464A0264F99710002D28D /* Fonts */,
 			);
 			path = HackPoint;
+			sourceTree = "<group>";
+		};
+		A21FF817264F83F100647317 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				A2932FFD26504E8C00680D31 /* APIClient.swift */,
+				A2DADA8F2650BF950002D66D /* APIConfiguration */,
+				A2DADA8E2650BF8A0002D66D /* DTO */,
+				A2DADA922650D0CF0002D66D /* Endpoints */,
+				A2932FFB26504D8C00680D31 /* NetworkLogger.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		A264648C264F8C790002D28D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A26464E4264FB7680002D28D /* MainCoordinator.swift */,
+				A264648D264F8C850002D28D /* Login */,
+				A2932FE4264FDA6A00680D31 /* Home */,
+				A2932FE5264FDB0800680D31 /* Team */,
+				A2932FED264FE7E300680D31 /* Mark */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A264648D264F8C850002D28D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A264648E264F8C920002D28D /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A264649B264F98300002D28D /* Text Field */ = {
+			isa = PBXGroup;
+			children = (
+				A264649C264F98400002D28D /* TextField.swift */,
+				A264649E264F98640002D28D /* TextFieldEffect.swift */,
+			);
+			path = "Text Field";
+			sourceTree = "<group>";
+		};
+		A26464A0264F99710002D28D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A26464C6264F9AF60002D28D /* Roboto */,
+				A26464C5264F9AE60002D28D /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A26464C5264F9AE60002D28D /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				A26464A8264F998F0002D28D /* Poppins-Black.ttf */,
+				A26464A6264F998F0002D28D /* Poppins-BlackItalic.ttf */,
+				A26464AB264F998F0002D28D /* Poppins-Bold.ttf */,
+				A26464B1264F99900002D28D /* Poppins-BoldItalic.ttf */,
+				A26464AF264F99900002D28D /* Poppins-ExtraBold.ttf */,
+				A26464A1264F998F0002D28D /* Poppins-ExtraBoldItalic.ttf */,
+				A26464A2264F998F0002D28D /* Poppins-ExtraLight.ttf */,
+				A26464A5264F998F0002D28D /* Poppins-ExtraLightItalic.ttf */,
+				A26464B0264F99900002D28D /* Poppins-Italic.ttf */,
+				A26464AC264F998F0002D28D /* Poppins-Light.ttf */,
+				A26464AD264F99900002D28D /* Poppins-LightItalic.ttf */,
+				A26464AA264F998F0002D28D /* Poppins-Medium.ttf */,
+				A26464AE264F99900002D28D /* Poppins-MediumItalic.ttf */,
+				A26464A9264F998F0002D28D /* Poppins-Regular.ttf */,
+				A26464B2264F99900002D28D /* Poppins-SemiBold.ttf */,
+				A26464A3264F998F0002D28D /* Poppins-SemiBoldItalic.ttf */,
+				A26464A4264F998F0002D28D /* Poppins-Thin.ttf */,
+				A26464A7264F998F0002D28D /* Poppins-ThinItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		A26464C6264F9AF60002D28D /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				A26464CD264F9B310002D28D /* Roboto-Black.ttf */,
+				A26464C8264F9B310002D28D /* Roboto-BlackItalic.ttf */,
+				A26464CC264F9B310002D28D /* Roboto-Bold.ttf */,
+				A26464CA264F9B310002D28D /* Roboto-BoldItalic.ttf */,
+				A26464C9264F9B310002D28D /* Roboto-Italic.ttf */,
+				A26464D0264F9B310002D28D /* Roboto-Light.ttf */,
+				A26464CF264F9B310002D28D /* Roboto-LightItalic.ttf */,
+				A26464CE264F9B310002D28D /* Roboto-Medium.ttf */,
+				A26464CB264F9B310002D28D /* Roboto-MediumItalic.ttf */,
+				A26464D1264F9B310002D28D /* Roboto-Regular.ttf */,
+				A26464D2264F9B310002D28D /* Roboto-Thin.ttf */,
+				A26464C7264F9B300002D28D /* Roboto-ThinItalic.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		A2932FE4264FDA6A00680D31 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A26464E2264FB5FE0002D28D /* HomeViewController.swift */,
+				A202B4B3264FC7FB00FAF0E1 /* HomeCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A2932FE5264FDB0800680D31 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				A2932FE6264FDB2600680D31 /* TeamViewController.swift */,
+				A2932FEA264FDF2000680D31 /* TeamCell.swift */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		A2932FED264FE7E300680D31 /* Mark */ = {
+			isa = PBXGroup;
+			children = (
+				A2932FEE264FE80100680D31 /* MarkViewController.swift */,
+				A2932FF2264FFD8D00680D31 /* MarkCell.swift */,
+				A2932FF426500A5B00680D31 /* FinishCell.swift */,
+			);
+			path = Mark;
+			sourceTree = "<group>";
+		};
+		A2DADA8E2650BF8A0002D66D /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				A2DADA8C2650BB190002D66D /* DTOReferee.swift */,
+				A2DADA902650CC220002D66D /* DTOTeam.swift */,
+				A2DADA972650E7260002D66D /* DTONote.swift */,
+				A2DADA9C2650F89C0002D66D /* DTOResultRefereePoint.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		A2DADA8F2650BF950002D66D /* APIConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				A21FF818264F86A600647317 /* APIConfiguration.swift */,
+				A2932FF62650442400680D31 /* APIConstant.swift */,
+			);
+			path = APIConfiguration;
+			sourceTree = "<group>";
+		};
+		A2DADA922650D0CF0002D66D /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				A2932FF92650465E00680D31 /* AuthEndPoint.swift */,
+				A2DADA932650D0F30002D66D /* TeamEndPoint.swift */,
+				A2DADA9A2650EB9B0002D66D /* RefereeEndPoint.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +376,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A21FF814264F83B100647317 /* Build configuration list for PBXNativeTarget "HackPoint" */;
 			buildPhases = (
+				51A64A260D01227E1E26D1E4 /* [CP] Check Pods Manifest.lock */,
 				A21FF7FC264F83B000647317 /* Sources */,
 				A21FF7FD264F83B000647317 /* Frameworks */,
 				A21FF7FE264F83B000647317 /* Resources */,
+				2F6306D1990F2C4399421A8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,22 +428,122 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A26464DB264F9B310002D28D /* Roboto-LightItalic.ttf in Resources */,
+				A26464BF264F99900002D28D /* Poppins-LightItalic.ttf in Resources */,
+				A26464DE264F9B310002D28D /* Roboto-Thin.ttf in Resources */,
+				A26464BA264F99900002D28D /* Poppins-Black.ttf in Resources */,
+				A26464BC264F99900002D28D /* Poppins-Medium.ttf in Resources */,
+				A26464B4264F99900002D28D /* Poppins-ExtraLight.ttf in Resources */,
+				A26464D6264F9B310002D28D /* Roboto-BoldItalic.ttf in Resources */,
+				A26464DC264F9B310002D28D /* Roboto-Light.ttf in Resources */,
+				A26464BB264F99900002D28D /* Poppins-Regular.ttf in Resources */,
+				A26464D9264F9B310002D28D /* Roboto-Black.ttf in Resources */,
+				A26464D7264F9B310002D28D /* Roboto-MediumItalic.ttf in Resources */,
+				A2932FE9264FDD0B00680D31 /* Images.xcassets in Resources */,
+				A26464B8264F99900002D28D /* Poppins-BlackItalic.ttf in Resources */,
+				A26464DD264F9B310002D28D /* Roboto-Regular.ttf in Resources */,
+				A26464D4264F9B310002D28D /* Roboto-BlackItalic.ttf in Resources */,
+				A26464C0264F99900002D28D /* Poppins-MediumItalic.ttf in Resources */,
+				A26464B9264F99900002D28D /* Poppins-ThinItalic.ttf in Resources */,
+				A26464C3264F99900002D28D /* Poppins-BoldItalic.ttf in Resources */,
+				A26464BD264F99900002D28D /* Poppins-Bold.ttf in Resources */,
+				A26464D8264F9B310002D28D /* Roboto-Bold.ttf in Resources */,
+				A26464D5264F9B310002D28D /* Roboto-Italic.ttf in Resources */,
 				A21FF810264F83B100647317 /* LaunchScreen.storyboard in Resources */,
+				A26464C1264F99900002D28D /* Poppins-ExtraBold.ttf in Resources */,
+				A26464C4264F99900002D28D /* Poppins-SemiBold.ttf in Resources */,
+				A26464DA264F9B310002D28D /* Roboto-Medium.ttf in Resources */,
+				A26464B7264F99900002D28D /* Poppins-ExtraLightItalic.ttf in Resources */,
+				A26464B5264F99900002D28D /* Poppins-SemiBoldItalic.ttf in Resources */,
+				A26464BE264F99900002D28D /* Poppins-Light.ttf in Resources */,
 				A21FF80D264F83B100647317 /* Assets.xcassets in Resources */,
+				A26464B6264F99900002D28D /* Poppins-Thin.ttf in Resources */,
 				A21FF80B264F83B000647317 /* Main.storyboard in Resources */,
+				A26464C2264F99900002D28D /* Poppins-Italic.ttf in Resources */,
+				A26464D3264F9B310002D28D /* Roboto-ThinItalic.ttf in Resources */,
+				A26464B3264F99900002D28D /* Poppins-ExtraBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F6306D1990F2C4399421A8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackPoint/Pods-HackPoint-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackPoint/Pods-HackPoint-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HackPoint/Pods-HackPoint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51A64A260D01227E1E26D1E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackPoint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A21FF7FC264F83B000647317 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A21FF808264F83B000647317 /* ViewController.swift in Sources */,
+				A2DADA942650D0F30002D66D /* TeamEndPoint.swift in Sources */,
+				A26464E7264FB8510002D28D /* ViewCustomizable.swift in Sources */,
+				A2932FE3264FD42F00680D31 /* ProgressHUD.swift in Sources */,
+				A2932FFA2650465E00680D31 /* AuthEndPoint.swift in Sources */,
 				A21FF804264F83B000647317 /* AppDelegate.swift in Sources */,
-				A21FF806264F83B000647317 /* SceneDelegate.swift in Sources */,
+				A2932FDF264FD3A200680D31 /* Coordinator.swift in Sources */,
+				A264648F264F8C930002D28D /* LoginViewController.swift in Sources */,
+				A2932FF72650442400680D31 /* APIConstant.swift in Sources */,
+				A2DADA9D2650F89C0002D66D /* DTOResultRefereePoint.swift in Sources */,
+				A202B4B4264FC7FB00FAF0E1 /* HomeCell.swift in Sources */,
+				A2DADA912650CC220002D66D /* DTOTeam.swift in Sources */,
+				A2932FEB264FDF2000680D31 /* TeamCell.swift in Sources */,
+				A2DADA8D2650BB190002D66D /* DTOReferee.swift in Sources */,
+				A2932FE1264FD3F900680D31 /* BaseViewController.swift in Sources */,
+				A2DADA9B2650EB9B0002D66D /* RefereeEndPoint.swift in Sources */,
+				A2DADA982650E7260002D66D /* DTONote.swift in Sources */,
+				A2932FF526500A5B00680D31 /* FinishCell.swift in Sources */,
+				A2932FFE26504E8C00680D31 /* APIClient.swift in Sources */,
+				A2932FF3264FFD8D00680D31 /* MarkCell.swift in Sources */,
+				A264649F264F98640002D28D /* TextFieldEffect.swift in Sources */,
+				A2932FEF264FE80100680D31 /* MarkViewController.swift in Sources */,
+				A21FF819264F86A600647317 /* APIConfiguration.swift in Sources */,
+				A2932FE7264FDB2600680D31 /* TeamViewController.swift in Sources */,
+				A26464E0264FA9AC0002D28D /* ButtonCustomizable.swift in Sources */,
+				A264649D264F98400002D28D /* TextField.swift in Sources */,
+				A2646498264F957C0002D28D /* Storyboarded.swift in Sources */,
+				A26464E5264FB7680002D28D /* MainCoordinator.swift in Sources */,
+				A2932FFC26504D8C00680D31 /* NetworkLogger.swift in Sources */,
+				A26464E3264FB5FE0002D28D /* HomeViewController.swift in Sources */,
+				A202B4B2264FC63800FAF0E1 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +687,14 @@
 		};
 		A21FF815264F83B100647317 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9626255D92D62321540E6F2 /* Pods-HackPoint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T663N6CXV2;
 				INFOPLIST_FILE = HackPoint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +708,14 @@
 		};
 		A21FF816264F83B100647317 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E916092245F94A1CEA243121 /* Pods-HackPoint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T663N6CXV2;
 				INFOPLIST_FILE = HackPoint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

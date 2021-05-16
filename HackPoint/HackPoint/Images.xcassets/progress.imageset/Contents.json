@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "кнопка оранжевая.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
