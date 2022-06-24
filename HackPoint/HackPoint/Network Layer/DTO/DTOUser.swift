@@ -8,7 +8,7 @@
 import Foundation
 
 struct DTOUser: Codable {
-    var id: String
-    var loging: String
+    var id: Int
+    var login: String
     var github: String?
 }

@@ -27,6 +27,7 @@ class RegistrationViewController: UIViewController, Storyboarded {
     var subView: UIView!
     
     var roles = [DTORole]()
+    var selectedRole = DTORole.participant
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -159,7 +160,32 @@ class RegistrationViewController: UIViewController, Storyboarded {
         let row = rolePickerView.selectedRow(inComponent: 0)
         rolePickerView.selectRow(row, inComponent: 0, animated: false)
         roleTextField.text = roles[row].description
-        rolePickerView.resignFirstResponder()
+        selectedRole = roles[row]
+        switchBasedNextTextField(roleTextField)
+    }
+    
+    @IBAction func signUp(_ sender: ButtonCustomizable) {
+        let name = nameTextField.text
+        let surname = nameTextField.text
+        let login = loginTextField.text
+        let password = passwordTextField.text
+        let github = githubTextField.text
+        APIClient.shared.registerUser(
+            name: name,
+            surname: surname,
+            login: login,
+            password: password,
+            role: selectedRole,
+            github: github) {
+                [weak self] result in
+                
+                switch result {
+                case .success(let user):
+                    print(user)
+                case .failure(let error):
+                    print(error)
+                }
+            }
     }
 }
 

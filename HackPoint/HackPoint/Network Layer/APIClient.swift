@@ -57,6 +57,24 @@ class APIClient {
         request(router: UserEndPoint.getRoles, completion: completion)
     }
     
+    func registerUser(name: String?,
+                      surname: String?,
+                      login: String?,
+                      password: String?,
+                      role: DTORole,
+                      github: String?,
+                      completion: @escaping(Result<DTOUser, AFError>) -> Void) {
+        request(
+            router: UserEndPoint.registration(
+                name: name,
+                surname: surname,
+                login: login,
+                password: password,
+                role: role,
+                github: github),
+            completion: completion)
+    }
+    
     func request<T: Codable>(router: APIConfiguration, decoder: DataDecoder? = nil, completion: @escaping(Result<T, AFError>) -> ())  {
         let jsonDecoder = JSONDecoder()
         //    jsonDecoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)

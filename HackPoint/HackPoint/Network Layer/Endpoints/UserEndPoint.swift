@@ -15,10 +15,18 @@ enum UserEndPoint: APIConfiguration {
         static let surname = "surname"
         static let login = "login"
         static let password = "password"
+        static let role = "role"
         static let github = "github"
     }
     
-    case registration(name: String, surname: String?, login: String, password: String, github: String?)
+    case registration(
+        name: String?,
+        surname: String?,
+        login: String?,
+        password: String?,
+        role: DTORole,
+        github: String?
+    )
     case getRoles
     
     var method: HTTPMethod {
@@ -43,12 +51,13 @@ enum UserEndPoint: APIConfiguration {
         switch self {
         case .getRoles:
             return nil
-        case .registration(let name, let surname, let login, let password, let github):
+        case .registration(let name, let surname, let login, let password, let role, let github):
             var param = Parameters()
             param[ParameterKey.name] = name
             param[ParameterKey.surname] = surname
             param[ParameterKey.login] = login
             param[ParameterKey.password] = password
+            param[ParameterKey.role] = role.rawValue
             param[ParameterKey.github] = github
             return .body(param)
         }
