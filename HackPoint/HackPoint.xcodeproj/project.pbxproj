@@ -16,6 +16,7 @@
 		A21FF819264F86A600647317 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FF818264F86A600647317 /* APIConfiguration.swift */; };
 		A2442EB72865F85100F5B58A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2442EB62865F85100F5B58A /* Coordinator.swift */; };
 		A2442EBA2865F87C00F5B58A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A2442EB92865F87C00F5B58A /* Alamofire */; };
+		A2442EBD286628E600F5B58A /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2442EBC286628E600F5B58A /* RegistrationViewController.swift */; };
 		A264648F264F8C930002D28D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A264648E264F8C920002D28D /* LoginViewController.swift */; };
 		A2646498264F957C0002D28D /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2646497264F957C0002D28D /* Storyboarded.swift */; };
 		A264649D264F98400002D28D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A264649C264F98400002D28D /* TextField.swift */; };
@@ -85,6 +86,7 @@
 		A21FF811264F83B100647317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A21FF818264F86A600647317 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		A2442EB62865F85100F5B58A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A2442EBC286628E600F5B58A /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		A264648E264F8C920002D28D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A2646497264F957C0002D28D /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		A264649C264F98400002D28D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
@@ -207,10 +209,19 @@
 			path = "Network Layer";
 			sourceTree = "<group>";
 		};
+		A2442EBB286628D300F5B58A /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				A2442EBC286628E600F5B58A /* RegistrationViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		A264648C264F8C790002D28D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				A26464E4264FB7680002D28D /* MainCoordinator.swift */,
+				A2442EBB286628D300F5B58A /* Registration */,
 				A264648D264F8C850002D28D /* Login */,
 				A2932FE4264FDA6A00680D31 /* Home */,
 				A2932FE5264FDB0800680D31 /* Team */,
@@ -462,6 +473,7 @@
 				A21FF804264F83B000647317 /* AppDelegate.swift in Sources */,
 				A264648F264F8C930002D28D /* LoginViewController.swift in Sources */,
 				A2932FF72650442400680D31 /* APIConstant.swift in Sources */,
+				A2442EBD286628E600F5B58A /* RegistrationViewController.swift in Sources */,
 				A2DADA9D2650F89C0002D66D /* DTOResultRefereePoint.swift in Sources */,
 				A202B4B4264FC7FB00FAF0E1 /* HomeCell.swift in Sources */,
 				A2DADA912650CC220002D66D /* DTOTeam.swift in Sources */,

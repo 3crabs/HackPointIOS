@@ -155,6 +155,4 @@ extension LoginViewController: UITextFieldDelegate {
         switchBasedNextTextField(textField)
         return true
     }
-    
-    
 }

@@ -17,7 +17,7 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        let loginViewController = LoginViewController.instantiate()
+        let loginViewController = RegistrationViewController.instantiate()
         loginViewController.coordinator = self
         navigationController.viewControllers = [loginViewController]
     }
