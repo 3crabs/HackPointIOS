@@ -8,8 +8,8 @@
 import Foundation
 
 struct DTOResult: Codable {
-    let referee: DTOReferee
-    let token: String
+    let referee: DTOReferee?
+    let token: String?
 }
 
 struct DTOReferee: Codable {

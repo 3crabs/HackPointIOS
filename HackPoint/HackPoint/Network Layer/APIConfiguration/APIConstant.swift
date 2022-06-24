@@ -10,7 +10,7 @@ import Alamofire
 
 struct K {
     struct ProductionServer {
-        static let baseURL = "http://34.91.29.64:3000/api"
+        static let baseURL = "http://94.228.125.129:3000/api"
     }
     
     struct APIParameterKey {
