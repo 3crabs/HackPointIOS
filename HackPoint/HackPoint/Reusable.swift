@@ -8,34 +8,34 @@
 import UIKit
 
 protocol Reusable {
-  static var reuseId: String { get }
+    static var reuseId: String { get }
 }
 
 extension Reusable where Self: UITableViewCell {
-  static var reuseId: String {
-    return String(describing: Self.self)
-  }
+    static var reuseId: String {
+        return String(describing: Self.self)
+    }
 }
 
 extension Reusable where Self: UICollectionViewCell {
-  static var reuseId: String {
-    return String(describing: Self.self)
-  }
+    static var reuseId: String {
+        return String(describing: Self.self)
+    }
 }
 
 extension Reusable where Self: UITableViewHeaderFooterView {
-  static var reuseId: String {
-    return String(describing: Self.self)
-  }
+    static var reuseId: String {
+        return String(describing: Self.self)
+    }
 }
 
 protocol Nibable {
-  static var nib: UINib { get }
+    static var nib: UINib { get }
 }
 
 extension Nibable where Self: UITableViewHeaderFooterView {
-  static var nib: UINib {
-    return UINib(nibName: String(describing: Self.self), bundle: nil)
-  }
+    static var nib: UINib {
+        return UINib(nibName: String(describing: Self.self), bundle: nil)
+    }
 }
 

@@ -7,5 +7,5 @@
 
 import Foundation
 struct DTOResultRefereePoint: Codable {
-  let status: String?
+    let status: String?
 }

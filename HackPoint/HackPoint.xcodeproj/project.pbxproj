@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E46C467D79F9E80135DC043 /* Pods_HackPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D5E89EE91847B846AFFA79 /* Pods_HackPoint.framework */; };
 		A202B4B2264FC63800FAF0E1 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A202B4B1264FC63800FAF0E1 /* Reusable.swift */; };
 		A202B4B4264FC7FB00FAF0E1 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A202B4B3264FC7FB00FAF0E1 /* HomeCell.swift */; };
 		A21FF804264F83B000647317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FF803264F83B000647317 /* AppDelegate.swift */; };
@@ -15,6 +14,8 @@
 		A21FF80D264F83B100647317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A21FF80C264F83B100647317 /* Assets.xcassets */; };
 		A21FF810264F83B100647317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21FF80E264F83B100647317 /* LaunchScreen.storyboard */; };
 		A21FF819264F86A600647317 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FF818264F86A600647317 /* APIConfiguration.swift */; };
+		A2442EB72865F85100F5B58A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2442EB62865F85100F5B58A /* Coordinator.swift */; };
+		A2442EBA2865F87C00F5B58A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A2442EB92865F87C00F5B58A /* Alamofire */; };
 		A264648F264F8C930002D28D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A264648E264F8C920002D28D /* LoginViewController.swift */; };
 		A2646498264F957C0002D28D /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2646497264F957C0002D28D /* Storyboarded.swift */; };
 		A264649D264F98400002D28D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A264649C264F98400002D28D /* TextField.swift */; };
@@ -53,7 +54,6 @@
 		A26464E3264FB5FE0002D28D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26464E2264FB5FE0002D28D /* HomeViewController.swift */; };
 		A26464E5264FB7680002D28D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26464E4264FB7680002D28D /* MainCoordinator.swift */; };
 		A26464E7264FB8510002D28D /* ViewCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26464E6264FB8510002D28D /* ViewCustomizable.swift */; };
-		A2932FDF264FD3A200680D31 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FDE264FD3A200680D31 /* Coordinator.swift */; };
 		A2932FE1264FD3F900680D31 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FE0264FD3F900680D31 /* BaseViewController.swift */; };
 		A2932FE3264FD42F00680D31 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FE2264FD42F00680D31 /* ProgressHUD.swift */; };
 		A2932FE7264FDB2600680D31 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932FE6264FDB2600680D31 /* TeamViewController.swift */; };
@@ -75,7 +75,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		79D5E89EE91847B846AFFA79 /* Pods_HackPoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackPoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A202B4B1264FC63800FAF0E1 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		A202B4B3264FC7FB00FAF0E1 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		A21FF800264F83B000647317 /* HackPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +84,7 @@
 		A21FF80F264F83B100647317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A21FF811264F83B100647317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A21FF818264F86A600647317 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		A2442EB62865F85100F5B58A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A264648E264F8C920002D28D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A2646497264F957C0002D28D /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		A264649C264F98400002D28D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
@@ -123,7 +123,6 @@
 		A26464E2264FB5FE0002D28D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A26464E4264FB7680002D28D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		A26464E6264FB8510002D28D /* ViewCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCustomizable.swift; sourceTree = "<group>"; };
-		A2932FDE264FD3A200680D31 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A2932FE0264FD3F900680D31 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A2932FE2264FD42F00680D31 /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 		A2932FE6264FDB2600680D31 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
@@ -142,8 +141,6 @@
 		A2DADA972650E7260002D66D /* DTONote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTONote.swift; sourceTree = "<group>"; };
 		A2DADA9A2650EB9B0002D66D /* RefereeEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefereeEndPoint.swift; sourceTree = "<group>"; };
 		A2DADA9C2650F89C0002D66D /* DTOResultRefereePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOResultRefereePoint.swift; sourceTree = "<group>"; };
-		E916092245F94A1CEA243121 /* Pods-HackPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackPoint.release.xcconfig"; path = "Target Support Files/Pods-HackPoint/Pods-HackPoint.release.xcconfig"; sourceTree = "<group>"; };
-		F9626255D92D62321540E6F2 /* Pods-HackPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackPoint.debug.xcconfig"; path = "Target Support Files/Pods-HackPoint/Pods-HackPoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,37 +148,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E46C467D79F9E80135DC043 /* Pods_HackPoint.framework in Frameworks */,
+				A2442EBA2865F87C00F5B58A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		339A0AEBDEFBE0194F78463F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				79D5E89EE91847B846AFFA79 /* Pods_HackPoint.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		446BF5E261C05DA179D0E4CA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F9626255D92D62321540E6F2 /* Pods-HackPoint.debug.xcconfig */,
-				E916092245F94A1CEA243121 /* Pods-HackPoint.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		A21FF7F7264F83B000647317 = {
 			isa = PBXGroup;
 			children = (
 				A21FF802264F83B000647317 /* HackPoint */,
 				A21FF801264F83B000647317 /* Products */,
-				446BF5E261C05DA179D0E4CA /* Pods */,
-				339A0AEBDEFBE0194F78463F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,13 +184,13 @@
 				A26464DF264FA9AC0002D28D /* ButtonCustomizable.swift */,
 				A26464E6264FB8510002D28D /* ViewCustomizable.swift */,
 				A202B4B1264FC63800FAF0E1 /* Reusable.swift */,
-				A2932FDE264FD3A200680D31 /* Coordinator.swift */,
 				A2932FE8264FDD0B00680D31 /* Images.xcassets */,
 				A21FF80C264F83B100647317 /* Assets.xcassets */,
 				A2932FE0264FD3F900680D31 /* BaseViewController.swift */,
 				A2932FE2264FD42F00680D31 /* ProgressHUD.swift */,
 				A264649B264F98300002D28D /* Text Field */,
 				A26464A0264F99710002D28D /* Fonts */,
+				A2442EB62865F85100F5B58A /* Coordinator.swift */,
 			);
 			path = HackPoint;
 			sourceTree = "<group>";
@@ -376,17 +354,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A21FF814264F83B100647317 /* Build configuration list for PBXNativeTarget "HackPoint" */;
 			buildPhases = (
-				51A64A260D01227E1E26D1E4 /* [CP] Check Pods Manifest.lock */,
 				A21FF7FC264F83B000647317 /* Sources */,
 				A21FF7FD264F83B000647317 /* Frameworks */,
 				A21FF7FE264F83B000647317 /* Resources */,
-				2F6306D1990F2C4399421A8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = HackPoint;
+			packageProductDependencies = (
+				A2442EB92865F87C00F5B58A /* Alamofire */,
+			);
 			productName = HackPoint;
 			productReference = A21FF800264F83B000647317 /* HackPoint.app */;
 			productType = "com.apple.product-type.application";
@@ -414,6 +393,9 @@
 				Base,
 			);
 			mainGroup = A21FF7F7264F83B000647317;
+			packageReferences = (
+				A2442EB82865F87C00F5B58A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = A21FF801264F83B000647317 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -467,48 +449,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2F6306D1990F2C4399421A8B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HackPoint/Pods-HackPoint-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HackPoint/Pods-HackPoint-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HackPoint/Pods-HackPoint-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		51A64A260D01227E1E26D1E4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HackPoint-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		A21FF7FC264F83B000647317 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -516,10 +456,10 @@
 			files = (
 				A2DADA942650D0F30002D66D /* TeamEndPoint.swift in Sources */,
 				A26464E7264FB8510002D28D /* ViewCustomizable.swift in Sources */,
+				A2442EB72865F85100F5B58A /* Coordinator.swift in Sources */,
 				A2932FE3264FD42F00680D31 /* ProgressHUD.swift in Sources */,
 				A2932FFA2650465E00680D31 /* AuthEndPoint.swift in Sources */,
 				A21FF804264F83B000647317 /* AppDelegate.swift in Sources */,
-				A2932FDF264FD3A200680D31 /* Coordinator.swift in Sources */,
 				A264648F264F8C930002D28D /* LoginViewController.swift in Sources */,
 				A2932FF72650442400680D31 /* APIConstant.swift in Sources */,
 				A2DADA9D2650F89C0002D66D /* DTOResultRefereePoint.swift in Sources */,
@@ -687,7 +627,6 @@
 		};
 		A21FF815264F83B100647317 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9626255D92D62321540E6F2 /* Pods-HackPoint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -708,7 +647,6 @@
 		};
 		A21FF816264F83B100647317 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E916092245F94A1CEA243121 /* Pods-HackPoint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -749,6 +687,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2442EB82865F87C00F5B58A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2442EB92865F87C00F5B58A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2442EB82865F87C00F5B58A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A21FF7F8264F83B000647317 /* Project object */;
 }

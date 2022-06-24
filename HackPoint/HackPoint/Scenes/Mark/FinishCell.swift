@@ -8,14 +8,14 @@
 import UIKit
 
 class FinishCell: UICollectionViewCell, Reusable {
-  
-  var teamId: Int?
-  
-  var handlerAction: ((Int) -> Void)?
-  
-  @IBAction func finish(_ sender: UIButton) {
-    handlerAction?(teamId!)
-  }
-  
-  
+    
+    var teamId: Int?
+    
+    var handlerAction: ((Int) -> Void)?
+    
+    @IBAction func finish(_ sender: UIButton) {
+        handlerAction?(teamId!)
+    }
+    
+    
 }

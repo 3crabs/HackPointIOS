@@ -9,36 +9,36 @@ import Foundation
 import Alamofire
 
 enum AuthEndpoint: APIConfiguration {
-  struct ParameterKey {
-    static let login = "login"
-    static let password = "password"
-    static let isMobile = "isMobile"
-  }
-  
-  case login(login: String, password: String, isMobile: Bool)
-  
-  var method: HTTPMethod {
-    switch self {
-    case .login:
-      return .post
+    struct ParameterKey {
+        static let login = "login"
+        static let password = "password"
+        static let isMobile = "isMobile"
     }
-  }
-  
-  var path: String {
-    switch self {
-    case .login:
-      return "/login"
+    
+    case login(login: String, password: String, isMobile: Bool)
+    
+    var method: HTTPMethod {
+        switch self {
+        case .login:
+            return .post
+        }
     }
-  }
-  
-  var parameters: RequestParams? {
-    switch self {
-    case .login(let login, let password, let isMobile):
-      var params = Parameters()
-      params[ParameterKey.login] = login
-      params[ParameterKey.password] = password
-      params[ParameterKey.isMobile] = isMobile
-      return .body(params)
+    
+    var path: String {
+        switch self {
+        case .login:
+            return "/login"
+        }
     }
-  }
+    
+    var parameters: RequestParams? {
+        switch self {
+        case .login(let login, let password, let isMobile):
+            var params = Parameters()
+            params[ParameterKey.login] = login
+            params[ParameterKey.password] = password
+            params[ParameterKey.isMobile] = isMobile
+            return .body(params)
+        }
+    }
 }

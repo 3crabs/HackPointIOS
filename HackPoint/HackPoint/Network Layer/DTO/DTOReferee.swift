@@ -8,14 +8,14 @@
 import Foundation
 
 struct DTOResult: Codable {
-  let referee: DTOReferee
-  let token: String
+    let referee: DTOReferee
+    let token: String
 }
 
 struct DTOReferee: Codable {
-  let id: Int
-  let login: String
-  let name: String
-  let password: String
-  let surname: String?
+    let id: Int
+    let login: String
+    let name: String
+    let password: String
+    let surname: String?
 }
