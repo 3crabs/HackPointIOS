@@ -53,6 +53,10 @@ class APIClient {
         request(router: TeamEndPoint.update(id: id, statusFinalPitch: "present"), completion: completion)
     }
     
+    func getRoles(completion: @escaping(Result<[DTORole], AFError>) -> Void) {
+        request(router: UserEndPoint.getRoles, completion: completion)
+    }
+    
     func request<T: Codable>(router: APIConfiguration, decoder: DataDecoder? = nil, completion: @escaping(Result<T, AFError>) -> ())  {
         let jsonDecoder = JSONDecoder()
         //    jsonDecoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
