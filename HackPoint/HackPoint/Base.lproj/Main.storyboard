@@ -39,7 +39,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="agN-jE-PlW">
-                                                <rect key="frame" x="57.5" y="91.5" width="260" height="484"/>
+                                                <rect key="frame" x="57.5" y="56.5" width="260" height="554"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="sYx-pd-p0n">
                                                         <rect key="frame" x="13" y="0.0" width="234" height="180"/>
@@ -68,7 +68,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="lVW-8A-0AM">
-                                                        <rect key="frame" x="0.0" y="269.5" width="260" height="214.5"/>
+                                                        <rect key="frame" x="0.0" y="269.5" width="260" height="284.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iH9-pi-0nw">
                                                                 <rect key="frame" x="0.0" y="0.0" width="260" height="140.5"/>
@@ -179,26 +179,51 @@
                                                                     </stackView>
                                                                 </subviews>
                                                             </stackView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0u-DR-hLr" customClass="ButtonCustomizable" customModule="HackPoint" customModuleProvider="target">
-                                                                <rect key="frame" x="17" y="168.5" width="226" height="46"/>
-                                                                <color key="backgroundColor" systemColor="linkColor"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="226" id="LLQ-Hq-XS3"/>
-                                                                    <constraint firstAttribute="height" constant="46" id="dTZ-d4-DeR"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
-                                                                <state key="normal" title="Войти">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="10"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="logIn:" destination="e9b-E7-SXd" eventType="touchUpInside" id="qlL-ym-FG8"/>
-                                                                </connections>
-                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="aG9-KG-kr1">
+                                                                <rect key="frame" x="17" y="168.5" width="226" height="116"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0u-DR-hLr" customClass="ButtonCustomizable" customModule="HackPoint" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="226" height="46"/>
+                                                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="226" id="LLQ-Hq-XS3"/>
+                                                                            <constraint firstAttribute="height" constant="46" id="dTZ-d4-DeR"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                                                        <state key="normal" title="Войти">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="signIn:" destination="e9b-E7-SXd" eventType="touchUpInside" id="9b4-LV-qBV"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jt-zv-ce9" customClass="ButtonCustomizable" customModule="HackPoint" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="70" width="226" height="46"/>
+                                                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="46" id="Xrx-Ep-evz"/>
+                                                                            <constraint firstAttribute="width" constant="226" id="vaH-jw-in8"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                                                        <state key="normal" title="Зарегестрироваться">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="signUp:" destination="e9b-E7-SXd" eventType="touchUpInside" id="CNq-X4-Qa0"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -1010,23 +1035,23 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleCell" id="ML5-Db-sLY" customClass="ScheduleCell" customModule="HackPoint" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="375" height="85.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="89"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ML5-Db-sLY" id="poD-lz-RPa">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RK1-99-aPo" customClass="ViewCustomizable" customModule="HackPoint" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="4" width="343" height="77.5"/>
+                                                    <rect key="frame" x="16" y="4" width="343" height="81"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dgH-ZY-MwB">
-                                                            <rect key="frame" x="16" y="0.0" width="311" height="77.5"/>
+                                                            <rect key="frame" x="16" y="0.0" width="311" height="81"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Of1-Jz-fdb">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="77.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="81"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22:35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bik-DD-1e5">
-                                                                            <rect key="frame" x="0.0" y="16" width="68" height="45.5"/>
+                                                                            <rect key="frame" x="0.0" y="16" width="68" height="49"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="68" id="VxR-7E-qF5"/>
                                                                             </constraints>
@@ -1044,10 +1069,10 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcM-00-Jm7">
-                                                                    <rect key="frame" x="76" y="0.0" width="235" height="77.5"/>
+                                                                    <rect key="frame" x="76" y="0.0" width="235" height="81"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сбор участников" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcO-VJ-fdW">
-                                                                            <rect key="frame" x="0.0" y="16" width="235" height="45.5"/>
+                                                                            <rect key="frame" x="0.0" y="16" width="235" height="49"/>
                                                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -1457,6 +1482,9 @@
     <designables>
         <designable name="0uq-VL-cy4">
             <size key="intrinsicContentSize" width="34.5" height="16"/>
+        </designable>
+        <designable name="8jt-zv-ce9">
+            <size key="intrinsicContentSize" width="145" height="32"/>
         </designable>
         <designable name="Cd9-lW-Y5u">
             <size key="intrinsicContentSize" width="30" height="43"/>

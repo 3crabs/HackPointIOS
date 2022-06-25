@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol ScheduleCoordinatorProtocol: HackCoordinator {
-    func showScheduleViewController()
+protocol NewsCoordinatorProtocol: HackCoordinator {
+    func showNewsViewController()
 }
 
-class ScheduleCoordinator: ScheduleCoordinatorProtocol {
+class NewsCoordinator: NewsCoordinatorProtocol {
     
     weak var finishDelegate: CoordinatorFinishDelegate?
     var navigationController: UINavigationController
@@ -20,26 +20,26 @@ class ScheduleCoordinator: ScheduleCoordinatorProtocol {
         
     required init(_ navigationController: UINavigationController) {
         self.navigationController = navigationController
+        self.navigationController.navigationBar.prefersLargeTitles = true
     }
         
     func start() {
-        showScheduleViewController()
+        showNewsViewController()
     }
     
     deinit {
         print("LoginCoordinator deinit")
     }
     
-    func showScheduleViewController() {
-        let scheduleVC = ScheduleViewController.instantiate()
-        scheduleVC.coordinator = self
-        scheduleVC.didSendEventClosure = {
+    func showNewsViewController() {
+        let newsVC = NewsViewController.instantiate(storyboardName: .news)
+        newsVC.coordinator = self
+        newsVC.didSendEventClosure = {
             [weak self] event in
             
             self?.finish()
         }
         
-        navigationController.pushViewController(scheduleVC, animated: true)
+        navigationController.pushViewController(newsVC, animated: true)
     }
 }
-

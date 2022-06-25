@@ -9,7 +9,8 @@ import UIKit
 
 class RegistrationViewController: UIViewController, Storyboarded {
     
-    weak var coordinator: MainCoordinator?
+    var coordinator: LoginCoordinator?
+    var didSendEventClosure: ((RegistrationViewController.Event) -> Void)?
     
     @IBOutlet private var nameTextField: TextField!
     @IBOutlet private var sirnameTextField: TextField!
@@ -31,6 +32,8 @@ class RegistrationViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Регистрация"
         
         getRoles()
         
@@ -110,16 +113,6 @@ class RegistrationViewController: UIViewController, Storyboarded {
         view.endEditing(true)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
-    
     private func switchBasedNextTextField(_ textField: UITextField) {
         switch textField {
         case nameTextField:
@@ -165,27 +158,29 @@ class RegistrationViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func signUp(_ sender: ButtonCustomizable) {
-        let name = nameTextField.text
-        let surname = nameTextField.text
-        let login = loginTextField.text
-        let password = passwordTextField.text
-        let github = githubTextField.text
-        APIClient.shared.registerUser(
-            name: name,
-            surname: surname,
-            login: login,
-            password: password,
-            role: selectedRole,
-            github: github) {
-                [weak self] result in
-                
-                switch result {
-                case .success(let user):
-                    print(user)
-                case .failure(let error):
-                    print(error)
-                }
-            }
+        coordinator?.goLoginViewController()
+//        let name = nameTextField.text
+//        let surname = nameTextField.text
+//        let login = loginTextField.text
+//        let password = passwordTextField.text
+//        let github = githubTextField.text
+//        APIClient.shared.registerUser(
+//            name: name,
+//            surname: surname,
+//            login: login,
+//            password: password,
+//            role: selectedRole,
+//            github: github) {
+//                [weak self] result in
+//
+//                switch result {
+//                case .success(let user):
+//                    print(user)
+//                    self?.coordinator?.navigationController.popViewController(animated: true)
+//                case .failure(let error):
+//                    print(error)
+//                }
+//            }
     }
 }
 
@@ -211,5 +206,11 @@ extension RegistrationViewController: UIPickerViewDelegate, UIPickerViewDataSour
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         roleTextField.text = roles[row].description
+    }
+}
+
+extension RegistrationViewController {
+    enum Event {
+        case register
     }
 }

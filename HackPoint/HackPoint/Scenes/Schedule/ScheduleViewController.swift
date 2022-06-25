@@ -11,6 +11,7 @@ class ScheduleViewController: UIViewController, Storyboarded {
     
     var coordinator: ScheduleCoordinator?
     var mockData = ScheduleMockData.getData()
+    var didSendEventClosure: ((ScheduleViewController.EventSchedule) -> Void)?
     
     @IBOutlet weak var tableView: UITableView!
 
@@ -25,6 +26,7 @@ class ScheduleViewController: UIViewController, Storyboarded {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
+        tableView.allowsSelection = false
     }
 }
 
@@ -65,5 +67,11 @@ extension ScheduleViewController: UITableViewDataSource, UITableViewDelegate {
         ])
         
         return view
+    }
+}
+
+extension ScheduleViewController {
+    enum EventSchedule {
+        case schedule
     }
 }

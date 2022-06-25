@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-MediumItalic.ttf">
+            <string>Roboto-MediumItalic</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--News View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="NewsViewController" id="Y6W-OH-hqX" customClass="NewsViewController" customModule="HackPoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3FR-H1-gGA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" id="wCh-eT-j8o" customClass="NewsCell" customModule="HackPoint" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="389"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wCh-eT-j8o" id="NMI-hg-dQB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="389"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umI-kU-FU5" customClass="ViewCustomizable" customModule="HackPoint" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="4" width="382" height="381"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9Uh-Mw-Jr2">
+                                                            <rect key="frame" x="16" y="16" width="350" height="349"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Je1-rY-C22">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="52.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Что такое питч? И с чем его едят?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytR-5m-51U">
+                                                                            <rect key="frame" x="0.0" y="0.5" width="280" height="52"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="22"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сб, 13:45" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx2-2S-vYO">
+                                                                            <rect key="frame" x="280" y="36" width="70" height="16.5"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="70" id="0PY-yx-L32"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="Roboto-MediumItalic" family="Roboto" pointSize="14"/>
+                                                                            <color key="textColor" systemColor="systemGray2Color"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </stackView>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_mock" translatesAutoresizingMaskIntoConstraints="NO" id="U4y-i2-BEC">
+                                                                    <rect key="frame" x="0.0" y="72.5" width="350" height="200"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="200" id="Taq-pW-4nN"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SN0-D0-yX0">
+                                                                    <rect key="frame" x="0.0" y="292.5" width="350" height="56.5"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <string key="text">Питч - это лорем ипсум и другие слова, которые могут быть в макете, и так далее и вот это все и другие слова и что то еще и вот это и еще давай инфо запихаем</string>
+                                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="9Uh-Mw-Jr2" secondAttribute="bottom" constant="16" id="B6E-uX-EMX"/>
+                                                        <constraint firstItem="9Uh-Mw-Jr2" firstAttribute="top" secondItem="umI-kU-FU5" secondAttribute="top" constant="16" id="ibc-hg-bjl"/>
+                                                        <constraint firstAttribute="trailing" secondItem="9Uh-Mw-Jr2" secondAttribute="trailing" constant="16" id="lNU-xj-PZD"/>
+                                                        <constraint firstItem="9Uh-Mw-Jr2" firstAttribute="leading" secondItem="umI-kU-FU5" secondAttribute="leading" constant="16" id="vSD-0k-tsR"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="umI-kU-FU5" firstAttribute="top" secondItem="NMI-hg-dQB" secondAttribute="top" constant="4" id="1ly-J7-dSN"/>
+                                                <constraint firstAttribute="bottom" secondItem="umI-kU-FU5" secondAttribute="bottom" constant="4" id="AKy-sG-2O8"/>
+                                                <constraint firstAttribute="trailing" secondItem="umI-kU-FU5" secondAttribute="trailing" constant="16" id="KYo-Lt-217"/>
+                                                <constraint firstItem="umI-kU-FU5" firstAttribute="leading" secondItem="NMI-hg-dQB" secondAttribute="leading" constant="16" id="wLa-OQ-ZSV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="SN0-D0-yX0" id="X5H-50-u7V"/>
+                                            <outlet property="newsImageView" destination="U4y-i2-BEC" id="Rrq-Fz-kVB"/>
+                                            <outlet property="timeLabel" destination="Xx2-2S-vYO" id="9CM-2n-vQ7"/>
+                                            <outlet property="titleLabel" destination="ytR-5m-51U" id="Hoe-u3-hGb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="3FR-H1-gGA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="J70-wz-wGD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="3FR-H1-gGA" secondAttribute="bottom" id="N0d-8j-MNH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3FR-H1-gGA" secondAttribute="trailing" id="bYe-Gy-Cqt"/>
+                            <constraint firstItem="3FR-H1-gGA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="pvY-3k-gfy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="3FR-H1-gGA" id="elr-tc-rOC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="news_mock" width="580" height="446"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

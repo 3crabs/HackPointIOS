@@ -47,9 +47,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             cell.update(name: "Демофест", date: "воскресенье, 15 мая", status: .progress)
         }
         
-        cell.openTeamAction = { [weak self] in
-            self?.coordinator?.openTeamScreen()
-        }
+//        cell.openTeamAction = { [weak self] in
+//            self?.coordinator?.openTeamScreen()
+//        }
         
         return cell
     }

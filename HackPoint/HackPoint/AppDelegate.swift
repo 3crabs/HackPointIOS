@@ -11,7 +11,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    var tabBarController: MainTabBarController?
+    var loginCoordinator: LoginCoordinator?
+    var appCoordinator: AppCoordinator?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -20,11 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupStart() {
-        tabBarController = MainTabBarController()
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = tabBarController
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        let navigationController = UINavigationController()
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        appCoordinator = AppCoordinator(navigationController)
+        appCoordinator?.start()
     }
 }
 

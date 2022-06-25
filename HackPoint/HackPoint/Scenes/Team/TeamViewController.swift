@@ -60,7 +60,7 @@ extension TeamViewController: UITableViewDataSource, UITableViewDelegate {
         )
         
         cell.selectTeamHandler = { [weak self] in
-            self?.coordinator?.openMarkScreen(team: team)
+//            self?.coordinator?.openMarkScreen(team: team)
         }
         return cell
     }

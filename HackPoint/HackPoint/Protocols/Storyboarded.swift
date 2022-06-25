@@ -9,7 +9,7 @@ import UIKit
 
 enum StoryboardType: String {
     case main = "Main"
-    case schedule = "Schedule"
+    case news = "News"
 }
 
 // A protocol that lets us instantiate view controllers from Main storyboard.

@@ -10,7 +10,8 @@ import Alamofire
 
 class LoginViewController: UIViewController, Storyboarded {
     
-    weak var coordinator: MainCoordinator?
+    var didSendEventClosure: ((LoginViewController.Event) -> Void)?
+    var coordinator: LoginCoordinator?
     
     var token: String?
     var referee: DTOReferee?
@@ -80,52 +81,56 @@ class LoginViewController: UIViewController, Storyboarded {
         view.endEditing(true)
     }
     
-    @IBAction func logIn(_ sender: UIButton) {
-        validation()
+    @IBAction func signIn(_ sender: UIButton) {
+        didSendEventClosure?(.login)
+//        validation()
+    }
+    
+    @IBAction func signUp(_ sender: UIButton) {
+        coordinator?.showRegistrationViewController()
+//        coordinator?.showRegistration()
     }
     
     @IBAction func startEditing(_ sender: TextField) {
         sender.borderInactiveColor = .systemGray5
     }
     
-    @discardableResult
-    private func validation() -> Bool {
-        guard let loginStr = loginTextField.text, let passwordStr = passwordTextField.text else { return false }
+    private func validation() {
+        guard
+            let loginStr = loginTextField.text,
+            let passwordStr = passwordTextField.text else {
+            return
+        }
         if loginStr.isEmpty || passwordStr.isEmpty {
             errorLabel.isHidden = false
             loginTextField.borderInactiveColor = .red
             passwordTextField.borderInactiveColor = .red
-            return false
         } else {
             errorLabel.isHidden = true
             loginTextField.borderInactiveColor = .systemGray5
             passwordTextField.borderInactiveColor = .systemGray5
-            login(login: loginStr, password: passwordStr)
-            return true
+            signIn(login: loginStr, password: passwordStr)
         }
     }
     
-    func login(login: String, password: String) {
+    func signIn(login: String, password: String) {
         showProgressHUD()
         APIClient.shared.login(login: login, password: password) { [weak self] result in
             switch result {
             case .success(let result):
                 self?.token = result.token
                 self?.referee = result.referee
-                
-                self?.hideProgressHUD()
-                
                 let defaults = UserDefaults.standard
                 defaults.set(self?.token, forKey: "Token")
                 self?.errorLabel.isHidden = true
-                self?.coordinator?.openHomeScreen(referee: self?.referee)
+//                self?.coordinator?.openHomeScreen(referee: self?.referee)
+                self?.hideProgressHUD()
             case .failure(let error):
                 let alert = UIAlertController(title: "Ошибка валидации", message: "Повторите ввод логина и паролья", preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "ОК", style: UIAlertAction.Style.default, handler: nil))
                 self!.present(alert, animated: true, completion: nil)
                 self?.errorLabel.isHidden = false
                 self?.hideProgressHUD()
-                print(error.localizedDescription)
             }
         }
     }
@@ -154,5 +159,11 @@ extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switchBasedNextTextField(textField)
         return true
+    }
+}
+
+extension LoginViewController {
+    enum Event {
+        case login
     }
 }
