@@ -32,7 +32,7 @@ class TabCoordinator: NSObject, HackCoordinator {
     }
 
     func start() {
-        let pages: [TabBarPage] = [.news, .schedule]
+        let pages: [TabBarPage] = [.home, .news, .schedule, .profile, .abouthack]
         
         let controllers = pages.map({ getTabController($0) })
         
@@ -60,12 +60,21 @@ class TabCoordinator: NSObject, HackCoordinator {
                                                      tag: page.pageOrderNumber())
 
         switch page {
+        case .home:
+            let homeVC = HomeViewController.instantiate()
+            navController.pushViewController(homeVC, animated: true)
         case .news:
             let newsCoordinator = NewsCoordinator(navController)
             newsCoordinator.start()
         case .schedule:
             let scheduleCoordinator = ScheduleCoordinator(navController)
             scheduleCoordinator.start()
+        case .profile:
+            let profileCoordinator = ProfileCoordinator(navController)
+            profileCoordinator.start()
+        case .abouthack:
+            let aboutCoordinator = AboutCoordinator(navController)
+            aboutCoordinator.start()
         }
         
         return navController

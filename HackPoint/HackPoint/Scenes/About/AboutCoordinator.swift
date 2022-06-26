@@ -1,17 +1,17 @@
 //
-//  NewsCoordinator.swift
+//  AboutCoordinator.swift
 //  HackPoint
 //
-//  Created by Maxim Butin on 25.06.2022.
+//  Created by Maxim Butin on 26.06.2022.
 //
 
 import UIKit
 
-protocol NewsCoordinatorProtocol: HackCoordinator {
-    func showNewsViewController()
+protocol AboutCoordinatorProtocol: HackCoordinator {
+    func showAboutViewController()
 }
 
-class NewsCoordinator: NewsCoordinatorProtocol {
+class AboutCoordinator: AboutCoordinatorProtocol {
     
     weak var finishDelegate: CoordinatorFinishDelegate?
     var navigationController: UINavigationController
@@ -24,22 +24,23 @@ class NewsCoordinator: NewsCoordinatorProtocol {
     }
         
     func start() {
-        showNewsViewController()
+        showAboutViewController()
     }
     
     deinit {
-        print("NewsCoordinator deinit")
+        print("ProfileCoordinator deinit")
     }
     
-    func showNewsViewController() {
-        let newsVC = NewsViewController.instantiate(storyboardName: .news)
-        newsVC.coordinator = self
-        newsVC.didSendEventClosure = {
+    func showAboutViewController() {
+        let aboutVC = AboutViewController.instantiate()
+        aboutVC.coordinator = self
+        aboutVC.didSendEventClosure = {
             [weak self] event in
             
             self?.finish()
         }
         
-        navigationController.pushViewController(newsVC, animated: true)
+        navigationController.pushViewController(aboutVC, animated: true)
     }
 }
+

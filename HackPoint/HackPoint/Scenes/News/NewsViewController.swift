@@ -17,6 +17,7 @@ class NewsViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setup()
     }
     
@@ -26,6 +27,12 @@ class NewsViewController: UIViewController, Storyboarded {
         tableView.dataSource = self
         tableView.separatorStyle = .none
         tableView.allowsSelection = false
+    }
+    
+    
+    @objc
+    func addTapped() {
+        
     }
 }
 

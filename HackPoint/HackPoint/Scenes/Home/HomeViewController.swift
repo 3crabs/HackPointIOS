@@ -26,7 +26,7 @@ class HomeViewController: BaseViewController, Storyboarded {
         mainTableView.delegate = self
         mainTableView.dataSource = self
         
-        nameLabel.text = "Привет, \(referee?.name)"
+        nameLabel.text = "Привет, Судья"
         
     }
 }
